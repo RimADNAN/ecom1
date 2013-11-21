@@ -43,10 +43,10 @@ if(Authentification::Test_auth())
 {
    switch(Authentification::Statut()){               
              case "1":
-                header("Location: profil_a.php") ;;
+                header("Location: index_a.php") ;;
                 break;
              case "2":
-                header("Location: profil_u.php") ;;
+                header("Location: index_m.php") ;;
                 break;
 			}
 	}else{ header("Location: index.php") ;}
