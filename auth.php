@@ -49,5 +49,10 @@ if(Authentification::Test_auth())
                 header("Location: index_m.php") ;;
                 break;
 			}
-	}else{ header("Location: index.php") ;}
+	}else{ 
+		echo '<script language="Javascript">
+			alert ("Login ou Password incorrest!" );
+			window.location.href = "index.php";
+			</script>';
+		}
 ?>
